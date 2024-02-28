@@ -1,0 +1,38 @@
+.niveau{
+    display: flex;
+    column-gap: 50px;
+    padding-bottom: 20px;
+}
+
+
+.niveau_date, .niveau_scolaire{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.niveau_filiere{
+    display: flex;
+    column-gap: 60px;
+    border-bottom: 1px solid;
+}
+
+.niveau_page{
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 7px;
+}
+
+.niveau_icon {
+    font-size: 18px;
+    color: #606060;
+}
+
+.niveau_paragraphe {
+    color: #606060;
+}
+
+.niveau_border {
+    border-bottom: 1px solid rgba(29, 153, 53, 1);
+}
+

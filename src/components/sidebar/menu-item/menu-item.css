@@ -1,0 +1,22 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.menu-item--active {
+    color: #93daa1;
+}
+
+.menu-item__icon {
+  font-size: 36px;
+}
+
+.menu-item__sub-item {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  color: white;
+}
