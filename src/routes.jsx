@@ -10,6 +10,9 @@ import Listes from "./pages/listes";
 import Searche from "./pages/searche";
 import Searcheactive from "./pages/searchactive";
 import Delegue from "./pages/delegue";
+import Cheker from "./pages/cheker";
+import Terminer from "./pages/terminer";
+import Oui from "./pages/oui";
 
 
 export const routes = createBrowserRouter([
@@ -52,6 +55,18 @@ export const routes = createBrowserRouter([
   {
     path: "/delegue",
     element: <Delegue/>
+  },
+  {
+    path: "/cheker",
+    element: <Cheker/>
+  },
+  {
+    path: "/terminer",
+    element: <Terminer/>
+  },
+  {
+    path: "/oui",
+    element: <Oui/>
   }
 
 ]);
