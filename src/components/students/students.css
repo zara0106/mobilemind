@@ -49,3 +49,11 @@ tbody td {
 .absent {
   background-color: red;
 }
+
+.booton {
+  display: flex;
+}
+
+.iconess {
+  font-size: 26px;
+}

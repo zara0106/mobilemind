@@ -1,5 +1,6 @@
 import React from "react";
 import "./students.css";
+import { Icon } from "@iconify/react";
 
 function Students() {
   function toggleModal() {
@@ -65,7 +66,18 @@ function Students() {
             </td>
             <td>0340644427</td>
             <td>
-              <p className="presence">Present</p>
+            <div className="dropdown dropdown-end flex">
+              
+          <div tabIndex={0} role="button" className="botton"> <p className="presence">Present</p> <Icon icon="eva:more-vertical-fill"/></div>
+          <ul tabIndex={0} className="dropdown-content shadow p-2 bg-base-100 rounded-box w-52">
+            <li className="suprimer">
+            <Icon icon="fluent:edit-20-regular" className="iconess"/>
+              <a>Definir comme delegue</a>
+            
+              </li>
+         
+          </ul>
+        </div>
             </td>
           </tr>
         </tbody>
