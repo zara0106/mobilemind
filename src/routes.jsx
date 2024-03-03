@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Matieres from "./pages/matieres";
 import Etudiant from "./pages/etudiant";
 import Dashboard from "./pages/dashboard";
-import Addmatiere from "./pages/addmatiere";
 import Delegueconfirm from "./pages/delegueconfirm";
 import Profil from "./pages/profil";
 import Listes from "./pages/listes";
@@ -27,10 +26,6 @@ export const routes = createBrowserRouter([
   {
     path: "/matieres",
     element: <Matieres />,
-  },
-  {
-    path: "/addmatiere",
-    element: <Addmatiere/>,
   },
   {
     path: "/delegueconfirm",

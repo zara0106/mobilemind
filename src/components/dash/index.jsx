@@ -63,9 +63,9 @@ function Dash() {
                                     <div className="flex flex-col gap-y-2">
                                         <Student firstName="RAKOTONIRINA" lastName="Mialy" />
                                         <Student firstName="NOMENJANAHARIZARA" lastName="zara" />
-                                        <Student firstName="RAKOTONIRINA" lastName="Mialy" />
-                                        <Student firstName="RAKOTONIRINA" lastName="Mialy" />
-                                        <Student firstName="RAKOTONIRINA" lastName="Mialy" />
+                                        <Student firstName="RAMAMONJISOA " lastName="Jedidia" />
+                                        <Student firstName="TELOHAINGO" lastName="Cadey" />
+                                        <Student firstName="FENO" lastName="Fanantenana" />
                                     </div>
                                 </div>
                             </div>

@@ -50,8 +50,10 @@ tbody td {
   background-color: red;
 }
 
-.booton {
+.botton {
   display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .iconess {

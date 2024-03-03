@@ -1,8 +1,13 @@
 import React from "react";
 import "./appel.css";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 function Appel() {
+
+  function toggleModal() {
+    setShowModal((currentValue) => !currentValue);
+  }
     
   return (
     <div>
@@ -91,7 +96,9 @@ function Appel() {
           </tr>
         </tbody>
       </table>
-        <p className="appel_terminer">Terminer</p>
+        <Link to="/terminer" className="appel_terminer">
+              Terminer
+        </Link>
     </div>
   );
 }

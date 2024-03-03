@@ -8,6 +8,7 @@ import Students from "../../components/students";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import Niveaux from "../../components/niveaux"
+import Modul from "../../components/modul";
 
 function Delegue() {
   const [isShowModal, setShowModal] = useState(false);
@@ -44,7 +45,29 @@ function Delegue() {
           <Students />
         </div>
       </div>
+      
+      <div>
+        <Modul  isShow={isShowModal}  toggleShow={toggleModal}>
+          <div className="confirm">
+          <p>Voulez vous vraiment definir <bold>Ceasy </bold>comme delegue(e)</p>
+          <div className="confirm_choix">
 
+            <div className="confirm_yes">
+              <Icon icon="carbon:checkmark-outline"/>
+              <p>Oui</p>
+            </div>
+
+            <div className="confirm_no">
+              <Icon icon="material-symbols-light:cancel-outline-rounded"/>
+              <p>Non</p>
+            </div>
+            
+          
+          </div>
+         
+          </div>
+        </Modul> 
+        </div>
      
     </div>
   );
