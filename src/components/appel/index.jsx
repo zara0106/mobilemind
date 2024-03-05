@@ -34,28 +34,10 @@ function Appel() {
               </div>
             </td>
             <td>
-               <Icon icon="ic:twotone-done" className="accepter_present"/>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
             <td>
-              <p className="absente"></p>
-            </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>1500</td>
-            <td>
-              {" "}
-              <div className="name">
-                {" "}
-                <div className="name-circle"></div>{" "}
-                <span>NOMENJANAHARIZARA Fifaliantsoa</span>
-              </div>{" "}
-            </td>
-            <td>
-               <Icon icon="clarity:close-line" className="accepter_absent"/>
-            </td>
-            <td>
-              <p className="presences"></p>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
           </tr>
           <tr>
@@ -70,10 +52,10 @@ function Appel() {
               </div>{" "}
             </td>
             <td>
-                <p className="presences"></p>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
             <td>
-              <Icon icon="clarity:close-line" className="accepter_absent"/>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
           </tr>
           <tr>
@@ -88,10 +70,28 @@ function Appel() {
               </div>{" "}
             </td>
             <td>
-                <p className="absente"></p>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
             <td>
-              <Icon icon="ic:twotone-done" className="accepter_present"/>
+              <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1500</td>
+            <td>
+              {" "}
+              <div className="name">
+                {" "}
+                <div className="name-circle"></div>{" "}
+                <span>NOMENJANAHARIZARA Fifaliantsoa</span>
+              </div>{" "}
+            </td>
+            <td>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
+            </td>
+            <td>
+            <input type="checkbox" className="checkbox bg-red-600 checkbox-lg  [--chkbg:#008000] [--chkfg:white]"/>
             </td>
           </tr>
         </tbody>
