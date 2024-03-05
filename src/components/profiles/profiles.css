@@ -86,7 +86,11 @@
     border-collapse: collapse;
 }
 
-.matieres {
+.matieress {
+    width: 90%;
+}
+
+.matieress {
     width: 90%;
 }
 
@@ -94,6 +98,10 @@
 .absences {
     width: 5%;
     
+}
+.absences1 {
+    width: 5%;
+    color: red;
 }
 .paragraphe {
     font-size: 18px;

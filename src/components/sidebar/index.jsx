@@ -14,10 +14,27 @@ function Sidebar() {
         </div> */}
 
         <div className="menu-contents">
+          <MenuItem 
+            link= "/cheker"
+            icon="fluent:phone-20-regular"
+            text="Liste d'appel"
+          />
+          
           <MenuItem
             link="/"
             icon="material-symbols:dashboard"
             text="Tableau de bord"
+          />
+          <MenuItem
+            link="/listes"
+            icon="pajamas:list-bulleted"
+            text="Liste etudiant"
+          />
+
+          <MenuItem
+            link="/profil"
+            icon ="fa-solid:chalkboard-teacher"
+            text="Profil des etudiant"
           />
           <MenuItem link="/etudiant" icon="ph:student" text="Etudiants" />
           <SubMenuItem text="Niveau L1" />
@@ -25,11 +42,8 @@ function Sidebar() {
           <SubMenuItem text="Niveau L3" />
           <SubMenuItem text="Niveau M1" />
           <SubMenuItem text="Niveau M2" />
-          <MenuItem
-            link="/matieres"
-            icon="pajamas:list-bulleted"
-            text="Liste matieres"
-          />
+        
+        
         </div>
       </div>
     </div>

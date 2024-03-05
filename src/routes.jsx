@@ -1,6 +1,5 @@
 import "./styles.css";
 import { createBrowserRouter } from "react-router-dom";
-import Matieres from "./pages/matieres";
 import Etudiant from "./pages/etudiant";
 import Dashboard from "./pages/dashboard";
 import Delegueconfirm from "./pages/delegueconfirm";
@@ -22,10 +21,6 @@ export const routes = createBrowserRouter([
   {
     path: "/etudiant",
     element: <Etudiant />,
-  },
-  {
-    path: "/matieres",
-    element: <Matieres />,
   },
   {
     path: "/delegueconfirm",

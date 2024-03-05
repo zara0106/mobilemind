@@ -56,14 +56,14 @@ function Profiles(){
                     <div className="profile_tableau">
                         <tr>
                             <th className="matieres">Matiere</th>
-                            <th className="presence">Presence</th>
+                            <th className="matieress">Presence</th>
                             <th className="absences">Absences</th>
                         </tr>
 
                         <tr>
-                            <td className="th">Statistique</td>
-                            <td className="th">80 sur 90</td>
-                            <td className="th">10</td>
+                            <td className="matieres">Statistique</td>
+                            <td className="matieress text-center">80 sur 90</td>
+                            <td className="absences1">10</td>
                         </tr>
                 </div>
                 </div>

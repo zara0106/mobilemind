@@ -7,24 +7,26 @@ import Description from "../../components/description";
 import Students from "../../components/students";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
-import Niveaux from "../../components/niveaux"
+import Niveaux from "../../components/niveaux";
+import Modal from "../../components/modal";
 
-function Etudiant() {
+
+
+function  Etudiant() {
   const [isShowModal, setShowModal] = useState(false);
 
   function toggleModal() {
     setShowModal((currentValue) => !currentValue);
   }
-
   return (
+    <>
     <div className="page">
       <div className="page__left">
         <Sidebar />
       </div>
       <div className="page__right">
         <Header />
-        <Niveaux/> 
-
+        <Niveaux/>
         <div className="matieres">
           <p>Matieres : </p>
           <div className="listes__matieres">
@@ -35,20 +37,46 @@ function Etudiant() {
               +
             </button>
           </div>
+        
         </div>
         <div>
-          <Description />
+           <Description/>
+            
+        </div>
+        
+        <div>
+          <Students/>
         </div>
 
         <div>
-          <Students />
+        
         </div>
       </div>
 
-
      
     </div>
+
+    <Modal isShow={isShowModal}  toggleShow={toggleModal}>
+        <div className="ajout_matiere">
+          <h1 className="ajout_matter">Ajout matiere</h1>
+          <p className="ajouters">Matiere</p>
+          <input texte="texte" placeholder="ex: Html et CSS" className="ajout-input"/>
+          <p className="ajouters">Heure</p>
+          <div className="ajout_heure">
+            <p className="ajout_paragraphe">7:30</p>
+            <p>Jusqu'a </p>
+            <p className="ajout_paragraphe" >7:30</p>
+          </div>
+          <div className="ajout_choisir">
+            <p></p>
+            <p className="ajout_annuler">Annuler</p>
+            <p className="ajout_ajouter">Ajouter</p>
+          </div>
+
+        </div>
+
+</Modal> 
+</>
   );
 }
-
 export default Etudiant;
