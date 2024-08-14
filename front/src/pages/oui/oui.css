@@ -1,0 +1,32 @@
+.scanner{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.scan {
+    text-align: center;
+    padding: 50px;
+}
+.scan_paragraphe {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.scan_confirmer{
+    border: 1px solid #1d9935;
+    background-color: #1d9935;
+    color: white;
+    width: 100px;
+    margin-left: 52px;
+    text-align: center;
+}
+
+.photo_image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 120px;
+}
+

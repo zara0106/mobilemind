@@ -1,0 +1,78 @@
+.table_students {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    text-align: left;
+    padding: 0 20px;
+    font-weight: 300;
+  }
+  
+  tbody tr {
+    background-color: white;
+  }
+  
+  tbody td {
+    padding: 20px;
+  }
+  
+  .name {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+  
+  .name-circle {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+  }
+  
+  .presences,
+  .absente {
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .presences {
+    background-color: #008000;
+  }
+  
+  .absente {
+    background-color: #ff0000;
+  }
+
+  .accepter_present,
+  .accepter_absent{
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+    width: 50px;
+  }
+
+  .accepter_present{
+    background-color: green;
+  }
+
+  .accepter_absent{
+    background-color: red;
+  }
+  
+  .appel_terminer{
+    font-size: 20px;
+    color: #1D9935;
+    padding-top: 20px;
+    text-align: right;
+  }
