@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  matriculate    String     @id
+  email          String  @unique
+  lastName       String
+  firstName      String?
+  birthDate      DateTime
+  phone          String
+  level          Level?   @relation(fields: [levelId], references: [id])
+  levelId        Int?
+  filiere       Filiere? @relation(fields: [filiereId] , references: [abreviation] )
+  filiereId     String?
+   presence     Presence[]
+}
+
+model Creneau {
+  id           Int @default(autoincrement())   @id
+  time         String
+  Date         DateTime
+  presence     Presence[]
+  classes      Classes?   @relation(fields: [classesId], references: [id])
+  classesId        Int?
+}
+
+
+model Level  {
+  id         Int @default(autoincrement())   @id
+  nameLevel  String
+  students   Student[]
+}
+
+model Teacher {
+  id           Int @default(autoincrement()) @id
+  firstNameTeacher  String
+  lastNameTeacher  String
+}
+
+model Filiere {
+  abreviation   String  @id
+  extension     String
+  students      Student[]
+}
+
+model Classes{
+  id         Int @default(autoincrement())   @id
+  nameClasses  String
+  creneau      Creneau[]
+}
+model Presence{
+  id               Int @default(autoincrement())  @id
+  creneau          Creneau?   @relation(fields: [creneauId], references: [id])
+  creneauId        Int?
+  students         Student?  @relation(fields: [studentsId] , references: [matriculate] )
+  studentsId       String?   
+  present          Boolean
+}
