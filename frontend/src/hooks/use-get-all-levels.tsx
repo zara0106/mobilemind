@@ -1,7 +1,6 @@
 import { TLevel } from "@/types";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 
 export const useGetAllLevels = () => {
   const [allLevels, setAllLevels] = useState<TLevel[]>([]);

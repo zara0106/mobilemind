@@ -52,7 +52,11 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         green : "#1d9935",
-        gray : "#F9F9F9"
+        "green-2" : "#9EEEAD",
+        "green-3" : "#77A73E",
+        gray : "#F9F9F9",
+        "gray-2" : "#606060",
+        red : "#DC1F4C"
       },
       borderRadius: {
         lg: "var(--radius)",
