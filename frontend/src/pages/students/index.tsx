@@ -173,7 +173,7 @@ export const Students = () => {
               }`}
               onClick={() => setSubjectSelected(creneau.id)}
             >
-              <p>{creneau.classes.nameClasses}</p>
+              <p>{creneau?.classes?.nameClasses}</p>
               <p
                 className={`text-gray-2 ${
                   subjectSelected === creneau.id && "text-green-2"
