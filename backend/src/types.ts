@@ -1,129 +1,119 @@
-import { ApiProperty } from "@nestjs/swagger";
-import { appendFile } from "fs";
+import { ApiProperty } from '@nestjs/swagger';
+import { appendFile } from 'fs';
 
 export class CreateLevelDto {
-    @ApiProperty()
-    id : number
+  @ApiProperty()
+  id: number;
 
-    @ApiProperty()
-    nameLevel : string
-
+  @ApiProperty()
+  nameLevel: string;
 }
 
-export class CreateCreneauDto{
-    @ApiProperty()
-    id: number
+export class CreateCreneauDto {
+  @ApiProperty()
+  time: string;
 
-    @ApiProperty()
-    time: string
+  @ApiProperty()
+  Date: Date;
 
-    @ApiProperty()
-    Date: Date
-
-    @ApiProperty()
-    classesId:number
+  @ApiProperty()
+  classesId: number;
 }
 
 export class UpdateLevelDto {
-    @ApiProperty()
-    nameLevel? : string
-
+  @ApiProperty()
+  nameLevel?: string;
 }
 
-export class CreateFiliereDto{
-    @ApiProperty()
-    abreviation: string
+export class CreateFiliereDto {
+  @ApiProperty()
+  abreviation: string;
 
-    @ApiProperty()
-    extension: string
+  @ApiProperty()
+  extension: string;
 }
 
-export class CreatePresenceDto{
-    @ApiProperty()
-    id:number
+export class CreatePresenceDto {
+  @ApiProperty()
+  id: number;
 
-    @ApiProperty()
-    creneauId: number
+  @ApiProperty()
+  creneauId: number;
 
-    @ApiProperty()
-    studentsId: string
+  @ApiProperty()
+  studentsId: string;
 
-    @ApiProperty()
-    present:boolean
-
+  @ApiProperty()
+  present: boolean;
 }
 
-export class UpdateCreneauDto{
-    @ApiProperty()
-    time:string
+export class UpdateCreneauDto {
+  @ApiProperty()
+  time: string;
 
-    @ApiProperty()
-    Date:Date
+  @ApiProperty()
+  Date: Date;
 }
-export class UpdateFiliereDto{
-    @ApiProperty()
-    extension?: string
-}
-
-export class CreateClasseDto{
-    @ApiProperty()
-    nameClasses: string
+export class UpdateFiliereDto {
+  @ApiProperty()
+  extension?: string;
 }
 
-export class UpdateClasseDto{
- 
-    @ApiProperty()
-    nameClasses?: string
+export class CreateClasseDto {
+  @ApiProperty()
+  nameClasses: string;
 }
 
-export class UpdateStudentDto{
-   
-    @ApiProperty()
-    email?:string
-
-    @ApiProperty()
-    lastName?: string
-
-    @ApiProperty()
-    firstName?: string
-
-    @ApiProperty()
-    birthDate?: Date
-
-    @ApiProperty()
-    phone?: string
-
-    @ApiProperty()
-    levelId?: number
-
-    @ApiProperty()
-    filiereId?: string
-
+export class UpdateClasseDto {
+  @ApiProperty()
+  nameClasses?: string;
 }
 
-export class CreateStudentDto{
-    @ApiProperty()
-    matriculate: string
+export class UpdateStudentDto {
+  @ApiProperty()
+  email?: string;
 
-    @ApiProperty()
-    email:string
+  @ApiProperty()
+  lastName?: string;
 
-    @ApiProperty()
-    lastName: string
+  @ApiProperty()
+  firstName?: string;
 
-    @ApiProperty()
-    firstName: string
+  @ApiProperty()
+  birthDate?: Date;
 
-    @ApiProperty()
-    birthDate: Date
+  @ApiProperty()
+  phone?: string;
 
-    @ApiProperty()
-    phone: string
+  @ApiProperty()
+  levelId?: number;
 
-    @ApiProperty()
-    levelId?: number
+  @ApiProperty()
+  filiereId?: string;
+}
 
-    @ApiProperty()
-    filiereId?: string
+export class CreateStudentDto {
+  @ApiProperty()
+  matriculate: string;
 
+  @ApiProperty()
+  email: string;
+
+  @ApiProperty()
+  lastName: string;
+
+  @ApiProperty()
+  firstName: string;
+
+  @ApiProperty()
+  birthDate: Date;
+
+  @ApiProperty()
+  phone: string;
+
+  @ApiProperty()
+  levelId?: number;
+
+  @ApiProperty()
+  filiereId?: string;
 }
