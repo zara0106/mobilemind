@@ -23,7 +23,7 @@ export type TCreneau = {
   Date: string;
   time: string;
   classesId: number;
-  classes: TClasse;
+  classes: TClasse | null;
 };
 
 export type TCreneauDto = {
